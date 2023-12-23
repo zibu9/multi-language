@@ -15,6 +15,7 @@ class HomeController extends Controller
 
     public function change(Request $request)
     {
+        //dd($request->lang);
         App::setLocale($request->lang);
         session()->put('locale', $request->lang);
 
