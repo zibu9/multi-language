@@ -19,4 +19,4 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
-Route::get('/{locale}', [HomeController::class, 'change'])->name('change');
+Route::get('lang/change', [HomeController::class, 'change'])->name('change');

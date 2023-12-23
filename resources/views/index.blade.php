@@ -32,7 +32,7 @@
 
 <script type="text/javascript">
 
-    var url = "{{ route('changeLang') }}";
+    var url = "{{ route('change') }}";
 
     $(".changeLang").change(function(){
         window.location.href = url + "?lang="+ $(this).val();
